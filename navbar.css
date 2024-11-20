@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+a{
+    text-decoration: none;
+}
+.sidebar {
+    width: 100%;
+    max-width: 412px;
+    height: 100vh;
+    background: #C9E6F0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.nav-item span {
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+}
+
+.goal-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.icon-part-1 {
+    width: 27px;
+    height: 25.38px;
+    background: #51A0C5;
+}
+
+.icon-part-2 {
+    width: 6.75px;
+    height: 18.12px;
+    background: #51A0C5;
+}
+
+.contact-section {
+    position: absolute;
+    bottom: 74px;
+    left: 31px;
+}
+
+.contact-section h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.email-icon::after,
+.phone-icon::after {
+    content: '';
+    position: absolute;
+    left: 1.5px;
+}
+
+.email-icon::after {
+    width: 21px;
+    height: 16.5px;
+    top: 3.75px;
+}
+
+.phone-icon::after {
+    width: 21px;
+    height: 21px;
+    top: 1.5px;
+}
+
+.contact-item span {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #262626;
+}
+
+@media (max-width: 412px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .nav-item span {
+        font-size: 20px;
+    }
+
+    .contact-section {
+        left: 20px;
+        bottom: 50px;
+    }
+}

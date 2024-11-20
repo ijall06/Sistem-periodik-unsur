@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: white;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 412px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+  }
+
+.background-blob {
+    width: 771px;
+    height: 700px;
+    position: absolute;
+    left: -368px;
+    top: -70px;
+    background: rgba(111, 191, 197, 0.69);
+    border-radius: 9999px;
+    border: 1px solid black;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    border: none;
+    background-color: transparent;
+    width: 2000px;
+    height: 70px;
+    transform: rotate(180deg);
+    position: fixed; /* Perbaikan: Ubah ke 'fixed' */
+    top: 0px; /* Jarak dari atas layar */
+    left: 0px; /* Jarak dari kiri layar */
+    font-size: 30px;
+    z-index: 1000; /* Tambahkan z-index agar elemen berada di atas konten lainnya */
+}
+
+.back-icon {
+    width: 33px;
+    height: 20px;
+    padding-right: 300px;
+    top: 15px;
+    left: 1950px;
+    position: absolute;
+}
+
+.page-title {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 27px;
+}
+
+.objectives-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.objective-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.objective-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #59595A;
+    text-align: center;
+    max-width: 298px;
+}
+
+.objective-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon specific styles */
+.icon-1 {
+    width: 38px;
+    height: 38px;
+}
+
+.icon-1 .icon-part-1 {
+    width: 16.5px;
+    position: absolute;
+    top: 2.75px;
+    left: 16.5px;
+}
+
+.icon-2 {
+    width: 38px;
+    height: 38px;
+}
+
+.icon-3 {
+    width: 38px;
+    height: 38px;;
+}
+
+.icon-4 {
+    width: 38px;
+    height: 38px;
+}
+
+@media (max-width: 412px) {
+    .container {
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .objective-text {
+        font-size: 20px;
+    }
+
+    .objective-card {
+        padding: 10px;
+    }
+}

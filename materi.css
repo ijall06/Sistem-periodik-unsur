@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.back-button {
+    border: none;
+    background-color: white;
+    width: 2000px;
+    height: 70px;
+    transform: rotate(180deg);
+    position: fixed; /* Perbaikan: Ubah ke 'fixed' */
+    top: 0px; /* Jarak dari atas layar */
+    left: 0px; /* Jarak dari kiri layar */
+    font-size: 30px;
+    z-index: 1000; /* Tambahkan z-index agar elemen berada di atas konten lainnya */
+}
+
+.back-icon {
+    width: 33px;
+    height: 20px;
+    padding-right: 300px;
+    top: 15px;
+    left: 1950px;
+    position: absolute;
+}
+
+
+.container {
+    top: 80px;
+    width: 100%;
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+}
+
+.card {
+    width: 100%;
+    background-color: #E3F9FB;
+    border-radius: 48px;
+    position: relative;
+    display: flex;
+}
+
+.card-content {
+    padding: 28px 23.57px;
+}
+
+h2 {
+    color: black;
+    font-size: 24px; /* Sedikit diperkecil untuk mobile */
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #0043F0;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Media Query untuk adaptasi di berbagai ukuran layar */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container {
+        width: 95%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
+
+/* Tambahan untuk layar yang lebih besar */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Optional: Add hover effects */
+.card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
